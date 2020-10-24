@@ -4,8 +4,7 @@ Various Utilities functions defined in this file.
 
 #include "include/algo_lib.h"
 
-void print_array_before_and_after_sort (void (*foo)(int*, int),
-										int* array_to_sort, int length_of_array)
+void print_array_before_and_after_sort (void (*foo)(int*, int), int* array_to_sort, int length_of_array)
 {
 	printf("array before applying sort =\t[");
     for(int i = 0; i < length_of_array; i++)
