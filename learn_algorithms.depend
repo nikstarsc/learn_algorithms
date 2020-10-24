@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1603525228 source:/home/nikhil/Desktop/learn/learn_algorithms/main.c
+	"include/algo_lib.h"
+
+1603525198 /home/nikhil/Desktop/learn/learn_algorithms/include/algo_lib.h
+	<stdio.h>
+	<stdlib.h>
+
+1603530675 source:/home/nikhil/Desktop/learn/learn_algorithms/src/insertion_sort.c
+	"include/algo_lib.h"
+
+1603530520 /home/nikhil/Desktop/learn/learn_algorithms/src/include/algo_lib.h
+	<stdio.h>
+	<stdlib.h>
+
+1603530356 source:/home/nikhil/Desktop/learn/learn_algorithms/src/utilities.c
+	"include/algo_lib.h"
+
+1603530709 source:/home/nikhil/Desktop/learn/learn_algorithms/src/main.c
+	"include/algo_lib.h"
+
