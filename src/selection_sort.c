@@ -3,21 +3,25 @@ Algorithm for selection sort for question 2.2.2 from introduction to algorithm
 */
 
 #include "include/algo_lib.h"
-#define increasing *(array_to_sort + j) < *(array_to_sort + i)
-#define decreasing *(array_to_sort + j) > *(array_to_sort + i)
+#define increasing(i, j) *(array_to_sort + j) < *(array_to_sort + i)
+#define decreasing(i, j) *(array_to_sort + j) > *(array_to_sort + i)
 
 static void sort_array_in_given_order(bool increasing_order, int* array_to_sort, int length_of_array)
 {
-	for(int i = 0; i < length_of_array; i++)
+	for(int i = 0; i < length_of_array - 1; i++)
 	{
-		int key = *(array_to_sort + i);
+		int key = i;
 
 		for(int j = i + 1; j < length_of_array; j++)
 		{
-			if((increasing_order)? increasing: decreasing)
+			if((increasing_order)? increasing(key, j): decreasing(key, j))
 			{
-				swap_int(*(array_to_sort + j), *(array_to_sort + i));
+				key = j;
 			}
+		}
+		if(key != i)
+		{
+			swap_int(*(array_to_sort + i), *(array_to_sort + key));
 		}
 	}
 }
